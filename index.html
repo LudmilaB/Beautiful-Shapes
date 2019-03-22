@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Beautiful Shapes</title> 
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+
+</head>
+<body class ="shape"  onresize="ResizeCanvas()" onload="RandomShape()">
+<div id="title_shapes">
+<div id="title_shapes_div">
+<div id="buttons"> 
+<a id="download" download="shape.png"><button onClick="Download()">Download</button></a><!--
+--><button onclick="ShowSelectMenu()">Edit</button>
+</div>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div id="parameters" style="display: none;">
+<table>
+<tr>
+
+<td><div  class="X" onclick="ShowSelectMenu()">&times</div></td>
+</tr>
+
+<tr>
+<td><label for="LineWidthSelect">Line width</label></td>
+<td>
+<select id="LineWidthSelect" onchange="Update()">
+  <option value="0.5">0.5</option>
+  <option value="1" >1</option>
+  <option value="2" selected>2</option>
+  <option value="3" >3</option>
+  <option value="4" >4</option>
+  <option value="5" >5</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td><label for="CornersSelect">Corners</label></td>
+<td>
+<select id="CornersSelect" onchange="Update()">
+  <option value="5">5</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9" >9</option>
+  <option value="10">10</option>
+  <option value="12" selected >12</option>
+  <option value="15" >15</option>
+  <option value="16" >16</option>
+  <option value="18" >18</option>
+  <option value="20" >20</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label for="GradientSelect">Paint</label></td>
+<td>
+<select id="GradientSelect" onchange="Update()">
+  <option value="0" >Flat</option>
+  <option value="1" selected>Radial</option>
+  <option value="2">Linear</option>
+<!--  <option value="3" >Layers</option>  -->
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label for="color1Select">Color 1</label></td>
+<td>
+<input id="color1Select" type="color" value="#ff3f16" onchange="Update()">
+</td>
+</tr>
+
+<tr>
+<td><label for="color2Select">Color 2</label></td>
+<td>
+<input id="color2Select" type="color" value="#ffff00" onchange="Update()">
+</td>
+</tr>
+<tr>
+<td><label for="BackgroundSelect">Background</label></td>
+<td>
+<input id="BackgroundSelect" type="color" value="#000000" onchange="Update()">
+</td>
+</tr>
+
+<tr>
+<td><label for="SpeedSelect">Speed</label></td>
+<td>
+<select id="SpeedSelect" onchange="Update()">
+  <option value="1" >Low</option>
+  <option value="0" selected>High</option>
+</select>
+</td>
+</tr>
+
+</table>
+</div>
+<div id="canvas_div">
+<canvas id="shapeCanvas" width="500" height="500" onclick="RandomShape()">Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+
+
+<script src="js/shapes.js"></script>
+<script src="js/shape15.js"></script>
+
+ </body>
+</html>
