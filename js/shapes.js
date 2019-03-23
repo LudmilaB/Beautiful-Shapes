@@ -152,6 +152,7 @@ function Download()
 		
 		var img = resizeImage();
 		download.setAttribute("href", img.src);
+		link.setAttribute('download', 'shape.png');
 		download.click();
 	//	var im = c.toDataURL("image/png");
 	//    download.setAttribute("href", im.src);
