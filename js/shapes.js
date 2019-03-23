@@ -157,7 +157,7 @@ function Download()
 		link.setAttribute('href', c.toDataURL("image/png").replace("image/png", "image/octet-stream"));
 		link.click();   */
 		var image = c.toDataURL("image/png").replace("image/png", "image/octet-stream");
-		window.location.href=image
+		document.location.href=image;
 	//	var im = c.toDataURL("image/png");
 	//    download.setAttribute("href", im.src);
 			  
