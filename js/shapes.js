@@ -148,12 +148,16 @@ function LightenDarkenColor(col, amt)
 
 function Download()
 {
-		var download = document.getElementById("download");
+/*		var download = document.getElementById("download");
 		
 		var img = resizeImage();
-		download.setAttribute("href", img.src);
+		download.setAttribute("href", img.src);  */
+	/*	var link = document.getElementById('link');
 		link.setAttribute('download', 'shape.png');
-		download.click();
+		link.setAttribute('href', c.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+		link.click();   */
+		var image = c.toDataURL("image/png").replace("image/png", "image/octet-stream");
+		window.location.href=image
 	//	var im = c.toDataURL("image/png");
 	//    download.setAttribute("href", im.src);
 			  
