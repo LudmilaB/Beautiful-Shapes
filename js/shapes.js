@@ -152,6 +152,8 @@ function Download()
 		
 		var img = resizeImage();
 		download.setAttribute("href", img.src);
+		test.innerHTML=img.src;
+		console.log(img.src);
 	//	var im = c.toDataURL("image/png");
 	//    download.setAttribute("href", im.src);
 			  
