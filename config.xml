@@ -15,7 +15,7 @@
    
    <preference name = "permissions" value = "none"/>
    
-   <plugin name="org.devgeeks.canvas2imageplugin" spec="0.7.0" source="pgb" />
+   <plugin spec="https://github.com/devgeeks/Canvas2ImagePlugin" />
    
    <icon src = "res/android/icon_ldpi.png" 
       gap:platform = "android" gap:qualifier = "ldpi" />
