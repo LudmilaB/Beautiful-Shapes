@@ -145,25 +145,7 @@ function LightenDarkenColor(col, amt)
  
     return "#" + (g | (b << 8) | (r << 16)).toString(16); 
 }
-function Cancel()
-{
-	document.getElementById("framefordialog").style.display="none";
-	
-}
 
-function Save()
-{
-	document.getElementById("framefordialog").style.display="none";
-	window.canvas2ImagePlugin.saveImageDataToLibrary(
-        function(msg){
-            console.log(msg);
-        },
-        function(err){
-            console.log(err);
-        },
-        document.getElementById('shapeCanvas')
-    );	
-}
 function Download()
 {
 		/*var download = document.getElementById("download");
@@ -178,7 +160,7 @@ function Download()
 		document.location.href=image;  */
 	//	var im = c.toDataURL("image/png");
 	//    download.setAttribute("href", im.src);
-	/*    window.canvas2ImagePlugin.saveImageDataToLibrary(
+	    window.canvas2ImagePlugin.saveImageDataToLibrary(
         function(msg){
             console.log(msg);
         },
@@ -186,8 +168,7 @@ function Download()
             console.log(err);
         },
         document.getElementById('shapeCanvas')
-    ); */
-	document.getElementById("framefordialog").style.display="block";
+    );
 			  
 }
 
