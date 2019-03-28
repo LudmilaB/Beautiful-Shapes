@@ -13,7 +13,7 @@
       Shapes Mania
    </author>
    
-   <preference name = "permissions" value = "none"/>
+
    
    <plugin spec="https://github.com/devgeeks/Canvas2ImagePlugin#7cb80bb" />
    
