@@ -1,17 +1,22 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 
 <widget xmlns = "http://www.w3.org/ns/widgets" 
-   xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.shapesmania.beautshapes" version = "1.00">
+   xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.shapesmania.beautshapes" version = "1.01">
    
-   <name>Beautiful Shapes</name>
+   <name>Grow Your Star</name>
    
    <description>
-      Draw, customize beautiful shapes
+      Draw, customize beautiful stars
    </description>
    
    <author href = "http://shapesmania.com/" email = "ludmiladvmnt@gmail.com">
       Shapes Mania
    </author>
+
+   <platform name="android">
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-targetSdkVersion" value="26" />
+   </platform>
    
    <preference name = "permissions" value = "none"/>
    
