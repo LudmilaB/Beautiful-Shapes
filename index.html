@@ -14,6 +14,7 @@
 </div>
 </div>
 <div style="clear: both;"></div>
+
 <a id="link"></a>
 <div id="parameters" style="display: none;">
 <table>
@@ -101,6 +102,13 @@
 </div>
 <div id="canvas_div">
 <canvas id="shapeCanvas" width="500" height="500" onclick="RandomShape()">Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<div id="framefordialog">
+<div id="dialog">
+<div><div id="message">Save drawing to device Gallery?</div></div>
+<div id="cancel" onclick="Cancel()">Cancel</div>
+<div id="save"  onclick="Save()">Save</div>
+</div>
 </div>
 
 <script src="cordova.js"></script>
